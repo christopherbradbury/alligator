@@ -1,4 +1,4 @@
-class MainController < ApplicationController
+class PlayerController < ApplicationController
   def index
     # TODO get some validation/errors around what is coming in
     blog_url = params[:blog_url]
