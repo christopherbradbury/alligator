@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <%= form_tag({controller: "player", action: "index"}, method: "get") do %>
-      <%= label_tag(:blog_url, "blog url:") %>
-      <%= text_field_tag(:blog_url) %>
-      <%= submit_tag("Search") %>
-    <% end %>
 
-    <% if @blog_url %>
-      <% ids = Collector.new(@blog_url).ids %>
-      <% ids && ids.reverse! %>
+    <%= form_tag({controller: "player", action: "index"}, method: :get, class: "form-inline") do %>
+      <%= text_field_tag :blog_url, nil, placeholder: 'enter blog url', size: '84%', class: 'form-control' %>
+      <%= submit_tag "Search", name: nil, class: "btn btn-default" %>
     <% end %>
 
     <div id="player"></div>

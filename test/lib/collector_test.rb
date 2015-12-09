@@ -2,6 +2,7 @@ require 'test_helper'
 
 describe Collector do
   # http://www.thestranger.com/blogs/slog/2015/09/03/22809715/beyond-these-boots-are-made-for-walkinlee-hazlewoods-10-best-songs
+  # http://www.thestranger.com/blogs/slog/2015/08/27/22758202/10-great-tracks-pitchfork-left-out-of-its-best-songs-of-the-80s-list
   let(:blog_url) { "#{Rails.root}/test/fixtures/blogs/lee_hazlewood.html" }
 
   describe '#links' do
